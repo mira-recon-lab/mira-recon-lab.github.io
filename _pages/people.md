@@ -11,7 +11,7 @@ nav_order: 3
 
 <div class="row align-items-center mb-4">
   <div class="col-md-3 col-sm-4">
-    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Jaejin Cho" class="img-fluid rounded">
+    <img src="{{ '/assets/img/prof_pic.png' | relative_url }}" alt="Jaejin Cho" class="img-fluid rounded">
   </div>
   <div class="col-md-9 col-sm-8">
     <h4>Jaejin Cho, Ph.D.</h4>

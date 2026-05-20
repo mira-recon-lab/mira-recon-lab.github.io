@@ -11,7 +11,7 @@ nav_order: 2
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research_wave_modl.jpg" title="Wave-MoDL" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research_wave_modl.png" title="Wave-MoDL" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -25,7 +25,7 @@ Our research interest is to develop rapid MR acquisition and high-fidelity physi
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research_qmri.jpg" title="Quantitative MRI" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research_qmri.png" title="Quantitative MRI" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -41,7 +41,7 @@ Our research interest is **accelerating the acquisition while preserving the acc
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/research_dmri.jpg" title="Diffusion MRI" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/research_dmri.png" title="Diffusion MRI" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
