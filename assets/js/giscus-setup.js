@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "mira-recon-lab/mira-lab",
+    "data-repo": "mira-recon-lab/mira-recon-lab.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
