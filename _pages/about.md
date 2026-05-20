@@ -41,7 +41,7 @@ Our research focuses on the development of biomedical imaging technology and adv
 Our group works at the intersection of MR physics and machine learning, with three main thrusts:
 
 1. **Deep Learning Based Image Reconstruction** — model-based deep learning (MoDL), wave-encoded reconstruction (Wave-MoDL), and self-supervised approaches for highly accelerated MRI.
-2. **Rapid Quantitative MRI** — accelerated acquisition of T1, T2, T2*, and PD maps while preserving quantitative accuracy.
+2. **Rapid Quantitative MRI** — accelerated acquisition of T1, T2, T2\*, and PD maps while preserving quantitative accuracy.
 3. **Motion-Robust Multi-shot Imaging for Diffusion MRI** — efficient, distortion-free, high-resolution msEPI methods such as VUDU and BUDA.
 
 See the [research]({{ '/research/' | relative_url }}) page for details.

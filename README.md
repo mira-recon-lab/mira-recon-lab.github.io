@@ -38,6 +38,7 @@ mira-lab/
 ### 1. Fork al-folio
 
 Go to https://github.com/alshedivat/al-folio and click **Use this template**. Name the repo either:
+
 - `<your-username>.github.io` — for a user/organization site at `https://<username>.github.io`, or
 - `mira-lab` — for a project site at `https://<username>.github.io/mira-lab/`
 
@@ -57,6 +58,7 @@ cp /path/to/mira-lab/_config.yml .
 ### 3. Update `_config.yml`
 
 Edit these fields in `_config.yml`:
+
 - `url:` → `https://<your-username>.github.io`
 - `baseurl:` → leave blank for user site; set to `/mira-lab` for project site
 - `github_username:` → your GitHub handle
@@ -67,13 +69,13 @@ Edit these fields in `_config.yml`:
 
 Place these images in `assets/img/`:
 
-| File | What it is | Where to source |
-|------|-----------|-----------------|
-| `prof_pic.jpg` | PI profile photo | Use the photo from Google Sites or upload a new one |
-| `research_wave_modl.jpg` | Deep learning recon figure | From Google Sites Research page |
-| `research_qmri.jpg` | Quantitative MRI figure | From Google Sites Research page |
-| `research_dmri.jpg` | Diffusion MRI figure | From Google Sites Research page |
-| `software_*.jpg` | Software thumbnails | Optional — use a generic placeholder if not available |
+| File                     | What it is                 | Where to source                                       |
+| ------------------------ | -------------------------- | ----------------------------------------------------- |
+| `prof_pic.jpg`           | PI profile photo           | Use the photo from Google Sites or upload a new one   |
+| `research_wave_modl.jpg` | Deep learning recon figure | From Google Sites Research page                       |
+| `research_qmri.jpg`      | Quantitative MRI figure    | From Google Sites Research page                       |
+| `research_dmri.jpg`      | Diffusion MRI figure       | From Google Sites Research page                       |
+| `software_*.jpg`         | Software thumbnails        | Optional — use a generic placeholder if not available |
 
 **Tip:** Right-click → "Save image as" on each figure from your Google Sites page, then drop them into `assets/img/`.
 
@@ -104,6 +106,7 @@ Then in your repo settings → **Pages** → set source to **GitHub Actions**.
 ### Publications
 
 All publications in `papers.bib` use the following custom al-folio fields:
+
 - `abbr` — journal/conference badge (MRM, ISMRM, MICCAI, etc.)
 - `selected: true` — marks 6 first-author papers to highlight on the homepage
 - `award` / `award_name` — ISMRM Merit Awards, Editor's Pick
