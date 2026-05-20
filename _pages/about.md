@@ -2,33 +2,57 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <strong>MIRA Lab</strong> — Medical Imaging Research and AI Laboratory, Sejong University
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><strong>Jaejin Cho, Ph.D.</strong></p>
+    <p>Assistant Professor</p>
+    <p>Dept. of AI and Robotics</p>
+    <p>Sejong University, Seoul, Korea</p>
+    <p>📧 jaejincho@sejong.ac.kr</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to the **Medical Imaging Research and AI Laboratory (MIRA Lab)** at Sejong University.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Our research focuses on the development of biomedical imaging technology and advanced neural networks for medical image processing and analysis. We are particularly interested in **rapid MRI acquisition** and **physics-guided deep learning reconstruction** that can facilitate clinical and neuroscientific applications.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Research Topics
+
+- **Development of biomedical imaging technology and its application**
+- **Advanced neural networks for medical image processing and analysis**
+
+## Current Research Directions
+
+Our group works at the intersection of MR physics and machine learning, with three main thrusts:
+
+1. **Deep Learning Based Image Reconstruction** — model-based deep learning (MoDL), wave-encoded reconstruction (Wave-MoDL), and self-supervised approaches for highly accelerated MRI.
+2. **Rapid Quantitative MRI** — accelerated acquisition of T1, T2, T2*, and PD maps while preserving quantitative accuracy.
+3. **Motion-Robust Multi-shot Imaging for Diffusion MRI** — efficient, distortion-free, high-resolution msEPI methods such as VUDU and BUDA.
+
+See the [research]({{ '/research/' | relative_url }}) page for details.
+
+## Join Us
+
+We are actively recruiting **graduate students and undergraduate researchers** interested in medical imaging, deep learning, and MRI physics.
+
+- Korean-speaking applicants: please see the [모집 안내 (Korean)]({{ '/ko/recruiting/' | relative_url }}) page.
+- International applicants: please email Dr. Cho directly.
+
+---
+
+Please feel free to contact Dr. Jaejin Cho at [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr) for more information.
