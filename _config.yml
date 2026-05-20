@@ -16,8 +16,8 @@ lang: en
 icon: 🧠
 
 # url and baseurl — UPDATE THESE for your GitHub Pages deployment
-url: https://<your-username>.github.io
-baseurl: # leave empty for user/organization site (e.g. miralab.github.io)
+url: https://mira-recon-lab.github.io/
+baseurl: /mira-lab/ # leave empty for user/organization site (e.g. miralab.github.io)
 last_updated: false
 
 # -----------------------------------------------------------------------------
