@@ -60,7 +60,7 @@ gitlab_username:
 twitter_username:
 mastodon_username:
 linkedin_username:
-scholar_userid:                # your Google Scholar user ID
+scholar_userid:                https://scholar.google.co.kr/citations?user=_jmLTlQAAAAJ&hl=en # your Google Scholar user ID
 semanticscholar_id:
 publons_id:
 research_gate_profile:
