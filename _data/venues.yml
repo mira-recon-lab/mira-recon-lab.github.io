@@ -1,9 +1,44 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Color per `abbr` used in _bibliography/papers.bib.
+# Categories:
+#   - Journals (blue)
+#   - Peer-reviewed conference papers (green)
+#   - Conference abstracts (gray)
+#   - Preprints (arXiv red)
 
-"PhysRev":
-  url: https://journals.aps.org/
+# --- Journals ---
+"MRM":
+  color: "#1565c0"
+"MRI":
+  color: "#1565c0"
+"IEEE Access":
+  color: "#1565c0"
+"Diagnostics":
+  color: "#1565c0"
+"Bioengineering":
+  color: "#1565c0"
+"Med. Phys.":
+  color: "#1565c0"
 
-"Vision":
-  color: "#009f36"
+# --- Conference papers (peer-reviewed) ---
+"MICCAI":
+  color: "#2e7d32"
+"SPIE":
+  color: "#2e7d32"
+
+# --- Conference abstracts ---
+"ISMRM":
+  color: "#6c757d"
+"ISMRM-WS":
+  color: "#6c757d"
+"ICMRI":
+  color: "#6c757d"
+"KSMRM":
+  color: "#6c757d"
+"OHBM":
+  color: "#6c757d"
+"ICEIC":
+  color: "#6c757d"
+
+# --- Preprints ---
+"arXiv":
+  color: "#b31b1b"
