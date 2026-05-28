@@ -2,7 +2,6 @@
 layout: page
 title: gSlider with BUDA
 description: Customer-to-Producer (C2P) sequence package for Siemens MRI (VE11C).
-img: assets/img/software_gslider.jpg
 importance: 1
 category: Customer-to-Producer
 ---

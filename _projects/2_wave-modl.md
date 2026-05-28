@@ -2,7 +2,6 @@
 layout: page
 title: Wave-MoDL
 description: Wave-encoded model-based deep learning for highly accelerated MR image reconstruction.
-img: assets/img/software_wavemodl.jpg
 importance: 2
 category: Open Source
 github: https://github.com/jaejin-cho/wave-modl

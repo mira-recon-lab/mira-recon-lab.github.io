@@ -2,7 +2,6 @@
 layout: page
 title: Wave-EPI
 description: Wave-encoded echo-planar imaging for accelerated single- and multi-shot EPI.
-img: assets/img/software_waveepi.jpg
 importance: 3
 category: Open Source
 github: https://github.com/jaejin-cho/wave-EPI

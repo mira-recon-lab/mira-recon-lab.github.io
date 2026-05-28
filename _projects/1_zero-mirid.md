@@ -2,7 +2,6 @@
 layout: page
 title: Zero-MIRID
 description: Zero-shot self-supervised learning of Multi-shot Image Reconstruction for Improved Diffusion MRI.
-img: assets/img/software_zeromirid.jpg
 importance: 1
 category: Open Source
 github: https://github.com/jaejin-cho/miccai2023

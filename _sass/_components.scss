@@ -139,6 +139,17 @@ ul.task-list input[type="checkbox"] {
     img {
       width: 100%;
     }
+
+    .project-icon-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background-color: var(--global-divider-color);
+      color: var(--global-text-color-light);
+      font-size: 3.5rem;
+    }
   }
 
   .col {

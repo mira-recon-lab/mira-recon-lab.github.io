@@ -2,7 +2,6 @@
 layout: page
 title: VUDU
 description: Variable flip, blip-Up and -Down Undersampling for motion-robust, distortion-free multi-shot EPI.
-img: assets/img/software_vudu.jpg
 importance: 4
 category: Open Source
 github: https://github.com/jaejin-cho/VUDU_ISMRM2022

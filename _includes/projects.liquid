@@ -10,6 +10,10 @@
           alt="project thumbnail"
           class="card-img-top"
         %}
+      {% else %}
+        <div class="card-img-top project-icon-placeholder">
+          <i class="fa-solid fa-code"></i>
+        </div>
       {% endif %}
       <div class="card-body">
         <h2 class="card-title">{{ project.title }}</h2>

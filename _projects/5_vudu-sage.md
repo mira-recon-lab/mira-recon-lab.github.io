@@ -2,7 +2,6 @@
 layout: page
 title: VUDU-SAGE
 description: Motion-robust, distortion-free EPI with efficient T2 and T2* mapping.
-img: assets/img/software_vudusage.jpg
 importance: 5
 category: Open Source
 github: https://github.com/jaejin-cho/vudu-sage
