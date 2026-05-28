@@ -52,6 +52,12 @@
           margin-bottom: 0.5rem;
           color: white !important;
 
+          // Force every descendant (div, a, etc.) to white as well, so
+          // the badge label stays legible regardless of theme variable.
+          * {
+            color: white !important;
+          }
+
           a {
             color: white;
 
