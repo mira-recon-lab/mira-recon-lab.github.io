@@ -163,12 +163,100 @@ ul.task-list input[type="checkbox"] {
   }
 
   h2.category {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+}
+
+// Software list
+
+.software-list {
+  margin-bottom: 2rem;
+
+  h2.category {
+    color: var(--global-text-color-light);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+
+  .software-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .software-icon {
+    flex: 0 0 2rem;
+    text-align: center;
+    padding-top: 0.25rem;
+    font-size: 1.5rem;
+    color: var(--global-theme-color);
+  }
+
+  .software-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .software-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: underline;
+    }
+  }
+
+  .software-desc {
+    margin: 0.3rem 0 0.4rem 0;
+    color: var(--global-text-color);
+    font-size: 1rem;
+  }
+
+  .software-github {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    text-decoration: none;
+
+    i {
+      color: var(--global-text-color);
+    }
+
+    &:hover {
+      color: var(--global-theme-color);
+
+      i {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// Alumni list — two columns on wider viewports
+
+.alumni-columns {
+  @media (min-width: 576px) {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  li {
+    break-inside: avoid;
   }
 }
 

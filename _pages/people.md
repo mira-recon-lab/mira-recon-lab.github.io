@@ -30,22 +30,22 @@ nav_order: 3
 ## Undergraduate Research Interns
 
 <ul class="list-unstyled">
-  <li class="mb-2"><strong>석성현</strong> &nbsp; <span class="text-muted">2024 –</span></li>
-  <li class="mb-2"><strong>임채은</strong> &nbsp; <span class="text-muted">2024 –</span></li>
   <li class="mb-2"><strong>한남규</strong> &nbsp; <span class="text-muted">2025 –</span></li>
   <li class="mb-2"><strong>김선주</strong> &nbsp; <span class="text-muted">2025 –</span></li>
-  <li class="mb-2"><strong>김윤환</strong> &nbsp; <span class="text-muted">2025 –</span></li>
 </ul>
 
 ---
 
 ## Alumni — Undergraduate Research Program
 
-<ul class="list-unstyled">
+<ul class="list-unstyled alumni-columns">
   <li class="mb-2"><strong>박보미</strong> &nbsp; <span class="text-muted">2024 – 2025</span></li>
   <li class="mb-2"><strong>양지윤</strong> &nbsp; <span class="text-muted">2024 – 2025</span></li>
   <li class="mb-2"><strong>손건우</strong> &nbsp; <span class="text-muted">2024 – 2025</span></li>
   <li class="mb-2"><strong>정준용</strong> &nbsp; <span class="text-muted">2024 – 2025</span></li>
+  <li class="mb-2"><strong>석성현</strong> &nbsp; <span class="text-muted">2024 – 2026</span></li>
+  <li class="mb-2"><strong>임채은</strong> &nbsp; <span class="text-muted">2024 – 2026</span></li>
+  <li class="mb-2"><strong>김윤환</strong> &nbsp; <span class="text-muted">2025 – 2026</span></li>
 </ul>
 
 ---

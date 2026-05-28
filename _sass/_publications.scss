@@ -7,6 +7,50 @@
 .publications {
   margin-top: 2rem;
 
+  .pub-category {
+    margin-bottom: 1.5rem;
+
+    > summary {
+      cursor: pointer;
+      list-style: none;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--global-text-color);
+      padding: 0.5rem 0;
+      border-bottom: 2px solid var(--global-theme-color);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::before {
+        content: "\f078"; // fa-chevron-down
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 0.85rem;
+        margin-right: 0.6rem;
+        color: var(--global-theme-color);
+        transition: transform 0.2s ease;
+      }
+    }
+
+    &:not([open]) > summary::before {
+      transform: rotate(-90deg);
+    }
+
+    &[open] > summary {
+      margin-bottom: 1rem;
+    }
+
+    > summary:hover {
+      color: var(--global-theme-color);
+    }
+  }
+
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -24,7 +68,7 @@
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
