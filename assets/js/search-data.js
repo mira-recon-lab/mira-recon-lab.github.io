@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Publications by MIRA Lab in reverse chronological order. * indicates equal contribution.",
+          description: "Publications by MIRA Lab, grouped by category. Click each category to expand or collapse. * indicates equal contribution.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
