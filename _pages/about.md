@@ -16,7 +16,7 @@ profile:
     <p>📧 jaejincho@sejong.ac.kr</p>
 
 selected_papers: true
-social: true
+social: false
 
 announcements:
   enabled: false
