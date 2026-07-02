@@ -25,7 +25,7 @@ nav_order: 4
   {% bibliography -q @*[category=conf_paper] %}
 </details>
 
-<details open class="pub-category">
+<details class="pub-category">
   <summary>Preprints (arXiv)</summary>
   {% bibliography -q @*[category=preprint] %}
 </details>
