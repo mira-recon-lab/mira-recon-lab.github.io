@@ -25,10 +25,16 @@ nav_order: 4
   {% bibliography -q @*[category=conf_paper] %}
 </details>
 
+{% capture preprints %}{% bibliography -q @*[category=preprint] %}{% endcapture %}
+{% assign preprints_content = preprints | strip_html | strip %}
+{% if preprints_content != "" %}
+
 <details class="pub-category">
   <summary>Preprints (arXiv)</summary>
-  {% bibliography -q @*[category=preprint] %}
+  {{ preprints }}
 </details>
+
+{% endif %}
 
 <details class="pub-category">
   <summary>Conference abstracts</summary>
