@@ -35,5 +35,6 @@ We develop **rapid MRI acquisition** and **physics-guided deep learning reconstr
 
 We are actively recruiting **graduate and undergraduate researchers** interested in medical imaging, deep learning, and MRI physics.
 
-- Korean-speaking applicants: see the [모집 안내]({{ '/ko/recruiting/' | relative_url }}) page.
-- International applicants: email Dr. Cho at [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
+<a class="recruit-btn" href="{{ '/ko/recruiting/' | relative_url }}">📢&nbsp;&nbsp;대학원생·학부연구생 모집 안내&nbsp;&nbsp;&rarr;</a>
+
+International applicants: email Dr. Cho at [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
