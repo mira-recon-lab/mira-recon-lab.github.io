@@ -4,6 +4,13 @@
 
 @use "variables" as v;
 
+/* Site-wide base font size. Set in % so it respects the visitor's browser
+   default; every rem-based size in the theme scales from here.
+   106.25% => 17px at the default 16px root. */
+html {
+  font-size: 106.25%;
+}
+
 p,
 h1,
 h2,
