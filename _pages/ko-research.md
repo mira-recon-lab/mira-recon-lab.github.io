@@ -9,6 +9,10 @@ alt_lang: /research/
 
 ## 연구
 
+<div class="section-card">
+<p><strong>MIRA Lab</strong>(의료영상 인공지능 연구실, Medical Imaging Research and AI Laboratory)은 세종대학교에서 빠른 MRI 촬영과 물리 기반 딥러닝 재구성을 연구합니다. deep-learning image reconstruction, 고속 quantitative MRI, diffusion MRI, 고해상도 fMRI 복원을 포함하는 포괄적인 의료영상처리를 연구하며, 임상 및 뇌과학 응용을 목표로 합니다.</p>
+</div>
+
 <div class="research-grid">
 
 <div class="research-card">

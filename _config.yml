@@ -36,8 +36,6 @@ analytics:
 # STEP 4: Choose Your Pages (comment out any you don't need)
 # ============================================================
 nav_pages:
-  - name: about
-    ko: 소개
   - name: research
     ko: 연구
   - name: publications

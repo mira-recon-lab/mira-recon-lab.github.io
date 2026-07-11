@@ -9,6 +9,10 @@ alt_lang: /ko/research/
 
 ## Research
 
+<div class="section-card">
+<p><strong>MIRA Lab</strong> (Medical Imaging Research and AI Laboratory) at Sejong University develops rapid MRI acquisition and physics-guided deep learning reconstruction. Our research spans deep-learning image reconstruction, rapid quantitative MRI, and motion-robust diffusion imaging for clinical and neuroscientific applications.</p>
+</div>
+
 <div class="research-grid">
 
 <div class="research-card">
