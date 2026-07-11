@@ -9,12 +9,26 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-research",
+  },{id: "nav-연구",
+          title: "연구",
+          description: "임상 및 뇌과학 응용을 위한 고속 MRI 획득과 물리 기반 딥러닝 재구성 연구.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ko/research/";
+          },
+        },{id: "nav-research",
           title: "Research",
           description: "Rapid MRI acquisition and physics-guided deep learning reconstruction for clinical and neuroscientific applications.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
+          },
+        },{id: "nav-구성원",
+          title: "구성원",
+          description: "MIRA Lab 구성원 — 지도교수, 현재 연구원, 졸업생.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ko/people/";
           },
         },{id: "nav-people",
           title: "People",
@@ -23,12 +37,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
+        },{id: "nav-출판",
+          title: "출판",
+          description: "MIRA Lab 논문 목록. 각 항목을 눌러 펼치거나 접을 수 있습니다. *는 동등 기여를 의미합니다.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ko/publications/";
+          },
         },{id: "nav-publications",
           title: "Publications",
           description: "Publications by MIRA Lab, grouped by category. Click each category to expand or collapse. * indicates equal contribution.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-소프트웨어",
+          title: "소프트웨어",
+          description: "MIRA Lab이 공개한 오픈소스 소프트웨어. 각 카드를 눌러 상세 내용과 코드를 확인하세요.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ko/software/";
           },
         },{id: "nav-software",
           title: "Software",
