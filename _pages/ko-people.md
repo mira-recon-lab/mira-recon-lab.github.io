@@ -38,7 +38,7 @@ nav_order: 3
 
 ---
 
-## 졸업생 — 학부 연구 프로그램
+## 졸업생 (학부 연구 프로그램)
 
 <ul class="list-unstyled alumni-columns">
   <li class="mb-2"><strong>박보미</strong> &nbsp; <span class="text-muted">2024 – 2025</span></li>
@@ -52,4 +52,4 @@ nav_order: 3
 
 ---
 
-연구실 합류에 관심이 있으신가요? [모집 안내]({{ '/ko/recruiting/' | relative_url }}) 페이지를 참고하거나 조재진 교수에게 이메일로 문의해 주세요.
+연구실 합류에 관심이 있다면 [모집 안내]({{ '/ko/recruiting/' | relative_url }}) 페이지를 참고하거나 조재진 교수에게 편하게 이메일 주세요.

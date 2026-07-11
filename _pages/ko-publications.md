@@ -18,12 +18,12 @@ nav_order: 4
 <div class="publications">
 
 <details open class="pub-category">
-  <summary>학술지 논문 (Journal articles)</summary>
+  <summary>학술지 논문</summary>
   {% bibliography -q @*[category=journal] %}
 </details>
 
 <details open class="pub-category">
-  <summary>학술대회 논문 (Peer-reviewed conference papers)</summary>
+  <summary>학술대회 논문</summary>
   {% bibliography -q @*[category=conf_paper] %}
 </details>
 
@@ -32,14 +32,14 @@ nav_order: 4
 {% if preprints_content != "" %}
 
 <details class="pub-category">
-  <summary>프리프린트 (Preprints, arXiv)</summary>
+  <summary>Preprints (arXiv)</summary>
   {{ preprints }}
 </details>
 
 {% endif %}
 
 <details class="pub-category">
-  <summary>학술대회 초록 (Conference abstracts)</summary>
+  <summary>학술대회 초록</summary>
   {% bibliography -q @*[category=conf_abstract] %}
 </details>
 
