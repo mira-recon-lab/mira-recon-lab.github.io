@@ -12,15 +12,15 @@ alt_lang: /ko/publications/
 <input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
 
 <div class="section-card" id="pubList">
-<h3>Preprints</h3>
-
-{% bibliography --query @unpublished %}
-
 <h3>Refereed Journal Articles</h3>
 
 {% bibliography --query @article %}
 
-<h3>Refereed Conference Proceedings</h3>
+<h3>Peer-reviewed Conference Papers</h3>
 
-{% bibliography --query @inproceedings %}
+{% bibliography --query @*[category=conf_paper] %}
+
+<h3>Conference Abstracts</h3>
+
+{% bibliography --query @*[category=conf_abstract] %}
 </div>

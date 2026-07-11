@@ -18,5 +18,9 @@ alt_lang: /publications/
 
 <h3>학술대회 논문</h3>
 
-{% bibliography --query @inproceedings %}
+{% bibliography --query @*[category=conf_paper] %}
+
+<h3>학술대회 초록</h3>
+
+{% bibliography --query @*[category=conf_abstract] %}
 </div>
