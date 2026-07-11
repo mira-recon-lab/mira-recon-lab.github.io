@@ -41,4 +41,4 @@ MRI와 딥러닝에 관심 있는 **대학원생·학부 연구생**을 상시 �
   <a class="recruit-btn" href="{{ '/ko/recruiting/' | relative_url }}">📢&nbsp;&nbsp;대학원생·학부연구생 모집 안내&nbsp;&nbsp;&rarr;</a>
 </div>
 
-해외 지원자는 편하게 이메일 주세요: [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
+International applicants: feel free to email [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
