@@ -10,12 +10,6 @@ profile:
   align: right
   image: mira_logo.svg
   image_circular: false
-  more_info: >
-    <p><strong>Jaejin Cho, Ph.D.</strong></p>
-    <p>Assistant Professor</p>
-    <p>Dept. of AI and Robotics</p>
-    <p>Sejong University, Seoul, Korea</p>
-    <p>📧 jaejincho@sejong.ac.kr</p>
 
 selected_papers: true
 social: false

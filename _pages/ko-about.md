@@ -10,12 +10,6 @@ profile:
   align: right
   image: mira_logo.svg
   image_circular: false
-  more_info: >
-    <p><strong>조재진 (Jaejin Cho), Ph.D.</strong></p>
-    <p>조교수</p>
-    <p>인공지능로봇학과</p>
-    <p>세종대학교, 서울</p>
-    <p>📧 jaejincho@sejong.ac.kr</p>
 
 selected_papers: true
 social: false
