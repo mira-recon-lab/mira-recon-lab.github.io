@@ -12,10 +12,6 @@ alt_lang: /publications/
 <input type="text" class="pub-search" id="pubSearch" placeholder="제목·저자·연도로 검색...">
 
 <div class="section-card" id="pubList">
-<h3>프리프린트</h3>
-
-{% bibliography --query @unpublished %}
-
 <h3>학술지 논문</h3>
 
 {% bibliography --query @article %}
@@ -23,6 +19,10 @@ alt_lang: /publications/
 <h3>학술대회 논문</h3>
 
 {% bibliography --query @*[category=conf_paper] %}
+
+<h3>프리프린트</h3>
+
+{% bibliography --query @unpublished %}
 
 <h3>학술대회 초록</h3>
 
