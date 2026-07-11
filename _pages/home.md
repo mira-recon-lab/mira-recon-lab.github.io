@@ -14,6 +14,9 @@ alt_lang: /ko/
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Deep Learning Reconstruction</a>
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Medical Image Processing</a>
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Image Reconstruction</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Rapid MR</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">AI in Medical Imaging</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Neuroimaging</a>
 </div>
 
 We develop **rapid MRI acquisition** and **physics-guided deep learning reconstruction** to make medical imaging faster and more reliable for clinical and neuroscientific applications. Our work spans deep-learning image reconstruction, rapid quantitative MRI, and motion-robust diffusion imaging.
