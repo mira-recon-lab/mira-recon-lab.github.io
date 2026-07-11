@@ -5,8 +5,8 @@
 <img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="profile-photo" alt="{{ site.name }}" loading="lazy">
 </a>
 <h4 class="profile-name">{% if cur_lang == 'ko' %}조재진{% else %}{{ site.name }}{% endif %}</h4>
-<p class="profile-title">{% if cur_lang == 'ko' %}조교수 · MIRA Lab{% else %}{{ site.title }}{% endif %}</p>
-<p class="profile-institution">{% if cur_lang == 'ko' %}세종대학교{% else %}{{ site.institution }}{% endif %}</p>
+<p class="profile-title">{% if cur_lang == 'ko' %}조교수{% else %}{{ site.title }}{% endif %}</p>
+<p class="profile-institution">{% if cur_lang == 'ko' %}세종대학교 AI로봇학과{% else %}{{ site.institution }}{% endif %}</p>
 <div class="profile-links">
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
 {% if site.links.cv and site.links.cv != "" %}<a href="{% if site.links.cv contains '://' %}{{ site.links.cv }}{% else %}{{ site.url }}{{ site.baseurl }}/{{ site.links.cv }}{% endif %}" target="_blank" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
