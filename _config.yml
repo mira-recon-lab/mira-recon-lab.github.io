@@ -17,7 +17,7 @@ links:
   orcid: ""
   twitter: ""
   linkedin: ""
-  cv: ""  # e.g., "papers/cv.pdf" — leave blank to hide the CV icon
+  cv: "https://drive.google.com/file/d/1bW-h2MUDwUSvhPwoaEzsI281SC6kH0YD/view?usp=sharing"  # local path (papers/cv.pdf) or full URL
 
 # ============================================================
 # STEP 3: Site Settings

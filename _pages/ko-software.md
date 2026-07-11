@@ -49,6 +49,7 @@ alt_lang: /software/
 <h4>VUDU-SAGE</h4>
 <p>T2·T2* 동시 확산 영상을 위한 VUDU의 SAGE 확장.</p>
 <div class="pub-actions">
+<a href="https://archive.ismrm.org/2023/2202.html" target="_blank" class="btn-pill btn-doi">초록</a>
 <a href="https://github.com/jaejin-cho/vudu-sage" target="_blank" class="btn-pill btn-git">코드</a>
 </div>
 </div>

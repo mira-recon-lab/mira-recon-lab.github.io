@@ -49,6 +49,7 @@ alt_lang: /ko/software/
 <h4>VUDU-SAGE</h4>
 <p>VUDU extended to SAGE for simultaneous T2 and T2* diffusion imaging.</p>
 <div class="pub-actions">
+<a href="https://archive.ismrm.org/2023/2202.html" target="_blank" class="btn-pill btn-doi">Abstract</a>
 <a href="https://github.com/jaejin-cho/vudu-sage" target="_blank" class="btn-pill btn-git">Code</a>
 </div>
 </div>
