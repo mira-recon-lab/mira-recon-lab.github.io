@@ -12,10 +12,8 @@ alt_lang: /ko/
 
 <div class="chip-container" markdown="0">
 <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Deep Learning Reconstruction</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Quantitative MRI</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Diffusion MRI</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Wave Encoding</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Motion-Robust Imaging</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Medical Image Processing</a>
+<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Image Reconstruction</a>
 </div>
 
 We develop **rapid MRI acquisition** and **physics-guided deep learning reconstruction** to make medical imaging faster and more reliable for clinical and neuroscientific applications. Our work spans deep-learning image reconstruction, rapid quantitative MRI, and motion-robust diffusion imaging.

@@ -12,10 +12,8 @@ alt_lang: /
 
 <div class="chip-container" markdown="0">
 <a href="{{ site.url }}{{ site.baseurl }}/ko/research" class="chip">Deep Learning Reconstruction</a>
-<a href="{{ site.url }}{{ site.baseurl }}/ko/research" class="chip">Quantitative MRI</a>
-<a href="{{ site.url }}{{ site.baseurl }}/ko/research" class="chip">Diffusion MRI</a>
-<a href="{{ site.url }}{{ site.baseurl }}/ko/research" class="chip">Wave Encoding</a>
-<a href="{{ site.url }}{{ site.baseurl }}/ko/research" class="chip">Motion-Robust Imaging</a>
+<a href="{{ site.url }}{{ site.baseurl }}/ko/research" class="chip">Medical Image Processing</a>
+<a href="{{ site.url }}{{ site.baseurl }}/ko/research" class="chip">Image Reconstruction</a>
 </div>
 
 MIRA 연구실에서는 **빠른 MRI 촬영**과 **물리 기반 딥러닝 재구성**을 연구합니다. MRI 물리를 딥러닝에 접목해 더 빠르면서도 믿을 수 있는 의료영상을 만드는 것이 목표이며, deep learning reconstruction, 고속 quantitative MRI, diffusion MRI, 고해상도 fMRI 복원을 포함하는 포괄적인 의료영상처리를 연구합니다.
