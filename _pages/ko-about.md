@@ -1,38 +1,28 @@
 ---
-layout: about
-title: 소개
-permalink: /ko/
+title: "소개"
+layout: gridlay
+sitemap: false
+permalink: /ko/about/
 lang: ko
-alt_lang: /
-subtitle: <strong>MIRA Lab</strong> — Medical Imaging Research and AI Laboratory, 세종대학교
-
-profile:
-  align: right
-  image: mira_logo.svg
-  image_circular: false
-
-selected_papers: true
-social: false
-
-announcements:
-  enabled: false
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
+alt_lang: /about/
 ---
 
-세종대학교 인공지능로봇학과 **MIRA Lab** (Medical Imaging Research and AI Laboratory)입니다. 우리 연구실은 **빠른 MRI 촬영**과 **딥러닝 기반 영상 재구성**을 연구합니다.
+## 소개
 
-핵심 아이디어는 MRI 물리를 딥러닝에 접목해, 더 빠르면서도 믿을 수 있는 의료영상을 만드는 것입니다. 주로 다루는 주제는 deep learning reconstruction, 고속 quantitative MRI, 움직임에 강인한 diffusion MRI이며, 자세한 내용은 [연구]({{ '/ko/research/' | relative_url }}) 페이지에 정리해 두었습니다.
-
-## 함께할 연구원을 찾습니다
-
-MRI와 딥러닝에 관심 있는 **대학원생·학부 연구생**을 상시 모집합니다.
-
-<div class="recruit-cta">
-  <a class="recruit-btn" href="{{ '/ko/recruiting/' | relative_url }}">📢&nbsp;&nbsp;대학원생·학부연구생 모집 안내&nbsp;&nbsp;&rarr;</a>
+<div class="section-card">
+<p><strong>MIRA Lab</strong>(의료영상 인공지능 연구실, Medical Imaging Research and AI Laboratory)은 세종대학교에서 빠른 MRI 촬영과 물리 기반 딥러닝 재구성을 연구합니다. deep-learning image reconstruction, 고속 quantitative MRI, 움직임에 강인한 diffusion MRI를 아우르며, 임상 및 뇌과학 응용을 목표로 합니다.</p>
 </div>
 
-International applicants: feel free to email [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
+<div class="section-card">
+<div class="pi-card">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="조재진" loading="lazy">
+<div>
+<h3 class="pi-name">조재진 (Jaejin Cho), Ph.D.</h3>
+<p style="font-style: italic; color: var(--text-secondary);">조교수 · MIRA Lab, 세종대학교 인공지능로봇학과</p>
+<div class="pi-links">
+<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
+</div>
+</div>
+</div>
+</div>

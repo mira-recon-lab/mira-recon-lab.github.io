@@ -1,0 +1,13 @@
+# Current students. name, photo, info required. info_ko optional (Korean page).
+- name: 한남규
+  photo: team/placeholder.svg
+  info: Undergraduate Research Intern (2025–)
+  info_ko: 학부 연구생 (2025–)
+- name: 김선주
+  photo: team/placeholder.svg
+  info: Undergraduate Research Intern (2025–)
+  info_ko: 학부 연구생 (2025–)
+- name: "This could be you!"
+  photo: rock.jpg
+  info: See the recruiting page for openings
+  info_ko: 모집 안내를 확인해 주세요

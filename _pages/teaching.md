@@ -1,15 +1,17 @@
 ---
-layout: page
+title: "Teaching"
+layout: gridlay
+sitemap: false
 permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
-nav: false
-nav_order: 6
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+## Teaching
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
-
-{% include courses.liquid %}
+<div class="section-card">
+<ul>
+<li>Physics 1, 2, 3: The Feynman Lectures on Physics (1961&#8211;63) <a href="https://www.feynmanlectures.caltech.edu/">Textbook here!</a></li>
+<li>Physics 219: Quantum Computing (1986)</li>
+<li>Graduate QED Seminar (1953&#8211;88)</li>
+<li>Physics X: Informal undergraduate Q&amp;A sessions (1961&#8211;78)</li>
+</ul>
+</div>

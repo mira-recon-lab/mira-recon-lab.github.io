@@ -1,38 +1,82 @@
 ---
-layout: about
-title: about
-permalink: /
+title: "About"
+layout: gridlay
+sitemap: false
+permalink: /about/
 lang: en
-alt_lang: /ko/
-subtitle: <strong>MIRA Lab</strong> — Medical Imaging Research and AI Laboratory, Sejong University
-
-profile:
-  align: right
-  image: mira_logo.svg
-  image_circular: false
-
-selected_papers: true
-social: false
-
-announcements:
-  enabled: false
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
+alt_lang: /ko/about/
 ---
 
-Welcome to the **Medical Imaging Research and AI Laboratory (MIRA Lab)** at Sejong University, led by Dr. Jaejin Cho in the Department of Artificial Intelligence and Robotics.
+## About
 
-We develop **rapid MRI acquisition** and **physics-guided deep learning reconstruction** to make medical imaging faster and more reliable for clinical and neuroscientific applications. Our work spans deep-learning image reconstruction, rapid quantitative MRI, and motion-robust diffusion imaging — see the [research]({{ '/research/' | relative_url }}) page for an overview.
-
-## Join Us
-
-We are actively recruiting **graduate and undergraduate researchers** interested in medical imaging, deep learning, and MRI physics.
-
-<div class="recruit-cta">
-  <a class="recruit-btn" href="{{ '/ko/recruiting/' | relative_url }}">📢&nbsp;&nbsp;대학원생·학부연구생 모집 안내&nbsp;&nbsp;&rarr;</a>
+<div class="section-card">
+<p><strong>MIRA Lab</strong> (Medical Imaging Research and AI Laboratory) at Sejong University develops rapid MRI acquisition and physics-guided deep learning reconstruction. Our research spans deep-learning image reconstruction, rapid quantitative MRI, and motion-robust diffusion imaging for clinical and neuroscientific applications.</p>
 </div>
 
-International applicants: email Dr. Cho at [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
+<div class="section-card">
+<div class="pi-card">
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
+<div>
+<h3 class="pi-name">{{ site.name }}</h3>
+<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, {{ site.institution }}</p>
+<div class="pi-links">
+{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
+{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.url }}{{ site.baseurl }}/{{ site.links.cv }}" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
+{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
+{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
+{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
+</div>
+{% if site.data.pi[0].education %}
+<ul style="margin-top: var(--space-4);">
+{% for education in site.data.pi[0].education %}
+<li>{{ education | replace: "-","&#8211;" }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+</div>
+</div>
+</div>
+
+{% if site.data.grants %}
+<div class="section-card">
+<h3>Grants</h3>
+<ul>
+{% for grant in site.data.grants %}
+<li>{{ grant.name }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
+{% if site.data.awards %}
+<div class="section-card">
+<h3>Awards</h3>
+<ul>
+{% for award in site.data.awards %}
+<li>{{ award.name | replace: "-","&#8211;" }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
+{% if site.data.people %}
+<div class="section-card">
+<h3>Students and Mentoring</h3>
+<ul>
+{% for student in site.data.people %}
+<li>{{ student.name }}, {{ student.location }} ({{ student.degree }}, {{ student.year }})</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
+{% if site.data.funders %}
+<div class="section-card">
+<h4>Sponsors</h4>
+<div class="sponsor-logos" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-6);">
+{% for funder in site.data.funders %}
+<a href="{{ funder.url }}" target="_blank"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ funder.image }}" alt="Funder logo" style="max-height: 80px; max-width: 200px; border-radius: 0;" loading="lazy"></a>
+{% endfor %}
+</div>
+</div>
+{% endif %}

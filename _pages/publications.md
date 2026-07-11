@@ -1,46 +1,26 @@
 ---
-layout: page
+title: "Publications"
+layout: gridlay
+sitemap: false
 permalink: /publications/
-title: Publications
 lang: en
 alt_lang: /ko/publications/
-description: Publications by MIRA Lab, grouped by category. Click each category to expand or collapse. * indicates equal contribution.
-nav: true
-nav_order: 4
 ---
 
-<!-- _pages/publications.md -->
+## Publications
 
-<!-- Bibsearch Feature -->
+<input type="text" class="pub-search" id="pubSearch" placeholder="Filter by title, author, or year...">
 
-{% include bib_search.liquid %}
+<div class="section-card" id="pubList">
+<h3>Preprints</h3>
 
-<div class="publications">
+{% bibliography --query @unpublished %}
 
-<details open class="pub-category">
-  <summary>Journal articles</summary>
-  {% bibliography -q @*[category=journal] %}
-</details>
+<h3>Refereed Journal Articles</h3>
 
-<details open class="pub-category">
-  <summary>Peer-reviewed conference papers</summary>
-  {% bibliography -q @*[category=conf_paper] %}
-</details>
+{% bibliography --query @article %}
 
-{% capture preprints %}{% bibliography -q @*[category=preprint] %}{% endcapture %}
-{% assign preprints_content = preprints | strip_html | strip %}
-{% if preprints_content != "" %}
+<h3>Refereed Conference Proceedings</h3>
 
-<details class="pub-category">
-  <summary>Preprints (arXiv)</summary>
-  {{ preprints }}
-</details>
-
-{% endif %}
-
-<details class="pub-category">
-  <summary>Conference abstracts</summary>
-  {% bibliography -q @*[category=conf_abstract] %}
-</details>
-
+{% bibliography --query @inproceedings %}
 </div>
