@@ -29,7 +29,7 @@ latest_posts:
   enabled: false
 ---
 
-세종대학교 인공지능로봇학과 **MIRA Lab** (Medical Imaging Research and AI Laboratory)입니다. 조재진 교수가 이끄는 우리 연구실은 **빠른 MRI 촬영**과 **딥러닝 기반 영상 재구성**을 연구합니다.
+세종대학교 인공지능로봇학과 **MIRA Lab** (Medical Imaging Research and AI Laboratory)입니다. 우리 연구실은 **빠른 MRI 촬영**과 **딥러닝 기반 영상 재구성**을 연구합니다.
 
 핵심 아이디어는 MRI 물리를 딥러닝에 접목해, 더 빠르면서도 믿을 수 있는 의료영상을 만드는 것입니다. 주로 다루는 주제는 deep learning reconstruction, 고속 quantitative MRI, 움직임에 강인한 diffusion MRI이며, 자세한 내용은 [연구]({{ '/ko/research/' | relative_url }}) 페이지에 정리해 두었습니다.
 
@@ -41,4 +41,4 @@ MRI와 딥러닝에 관심 있는 **대학원생·학부 연구생**을 상시 �
   <a class="recruit-btn" href="{{ '/ko/recruiting/' | relative_url }}">📢&nbsp;&nbsp;대학원생·학부연구생 모집 안내&nbsp;&nbsp;&rarr;</a>
 </div>
 
-해외 지원자는 조재진 교수에게 편하게 이메일 주세요: [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
+해외 지원자는 편하게 이메일 주세요: [jaejincho@sejong.ac.kr](mailto:jaejincho@sejong.ac.kr).
