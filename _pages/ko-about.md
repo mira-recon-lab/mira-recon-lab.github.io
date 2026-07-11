@@ -8,7 +8,7 @@ subtitle: <strong>MIRA Lab</strong> — Medical Imaging Research and AI Laborato
 
 profile:
   align: right
-  image: prof_pic.png
+  image: mira_logo.svg
   image_circular: false
   more_info: >
     <p><strong>조재진 (Jaejin Cho), Ph.D.</strong></p>
