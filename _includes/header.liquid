@@ -42,15 +42,22 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+          {% comment %} Current language ('en' default, 'ko' for Korean pages) and its home URL {% endcomment %}
+          {% assign cur_lang = page.lang | default: 'en' %}
+          {% if cur_lang == 'ko' %}
+            {% assign home_url = '/ko/' %}
+          {% else %}
+            {% assign home_url = '/' %}
+          {% endif %}
+          {% for node in site.pages %}
+            {% if node.permalink == home_url %} {% assign about_title = node.title %} {% endif %}
           {% endfor %}
 
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.permalink == home_url %}active{% endif %}">
+            <a class="nav-link" href="{{ home_url | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
+              {% if page.permalink == home_url %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,7 +66,8 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% assign p_lang = p.lang | default: 'en' %}
+            {% if p.nav and p.autogen == null and p_lang == cur_lang %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -117,6 +125,30 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <!-- Language Switcher -->
+          <li class="nav-item lang-switch">
+            {% if cur_lang == 'ko' %}
+              {% assign lang_target = page.alt_lang | default: '/' %}
+              <a
+                class="nav-link"
+                href="{{ lang_target | relative_url }}"
+                data-lang="en"
+                hreflang="en"
+                onclick="try{localStorage.setItem('site_lang','en')}catch(e){}"
+                >EN</a
+              >
+            {% else %}
+              {% assign lang_target = page.alt_lang | default: '/ko/' %}
+              <a
+                class="nav-link"
+                href="{{ lang_target | relative_url }}"
+                data-lang="ko"
+                hreflang="ko"
+                onclick="try{localStorage.setItem('site_lang','ko')}catch(e){}"
+                >한국어</a
+              >
+            {% endif %}
+          </li>
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

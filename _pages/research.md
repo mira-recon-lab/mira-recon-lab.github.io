@@ -2,6 +2,8 @@
 layout: page
 permalink: /research/
 title: Research
+lang: en
+alt_lang: /ko/research/
 description: Rapid MRI acquisition and physics-guided deep learning reconstruction for clinical and neuroscientific applications.
 nav: true
 nav_order: 2

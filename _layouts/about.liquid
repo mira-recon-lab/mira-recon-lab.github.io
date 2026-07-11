@@ -58,8 +58,13 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
+      {% assign about_lang = page.lang | default: 'en' %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        {% if about_lang == 'ko' %}
+          <a href="{{ '/ko/publications/' | relative_url }}" style="color: inherit">주요 논문</a>
+        {% else %}
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        {% endif %}
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

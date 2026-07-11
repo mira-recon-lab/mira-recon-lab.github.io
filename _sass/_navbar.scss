@@ -188,3 +188,27 @@
     color: var(--global-hover-color);
   }
 }
+
+// Language switcher (EN / 한국어)
+.lang-switch {
+  .nav-link {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 576px) {
+  .lang-switch .nav-link {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 1.4;
+  }
+  .lang-switch .nav-link:hover {
+    border-color: var(--global-hover-color);
+    color: var(--global-hover-color);
+  }
+}

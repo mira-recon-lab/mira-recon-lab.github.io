@@ -2,6 +2,8 @@
 layout: page
 permalink: /ko/recruiting/
 title: 모집 안내
+lang: ko
+alt_lang: /
 description: 대학원생 및 학부 연구생 모집 — MIRA Lab, 세종대학교
 nav: false
 ---

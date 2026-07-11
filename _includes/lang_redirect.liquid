@@ -1,0 +1,24 @@
+<!-- Language auto-redirect: browser-language based, home page only, respects saved choice. -->
+<!-- Runs synchronously in <head> to avoid a flash of the wrong language. -->
+<script>
+  (function () {
+    try {
+      var KEY = 'site_lang';
+      var lang = localStorage.getItem(KEY);
+      if (lang !== 'en' && lang !== 'ko') {
+        var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        lang = nav.indexOf('ko') === 0 ? 'ko' : 'en';
+      }
+      var path = window.location.pathname.replace(/index\.html$/, '');
+      var atEnHome = path === '/';
+      var atKoHome = path === '/ko/' || path === '/ko';
+      if (lang === 'ko' && atEnHome) {
+        window.location.replace('/ko/');
+      } else if (lang === 'en' && atKoHome) {
+        window.location.replace('/');
+      }
+    } catch (e) {
+      /* localStorage or navigator unavailable — keep the current page. */
+    }
+  })();
+</script>

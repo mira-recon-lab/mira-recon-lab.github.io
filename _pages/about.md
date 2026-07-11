@@ -2,6 +2,8 @@
 layout: about
 title: about
 permalink: /
+lang: en
+alt_lang: /ko/
 subtitle: <strong>MIRA Lab</strong> — Medical Imaging Research and AI Laboratory, Sejong University
 
 profile:
