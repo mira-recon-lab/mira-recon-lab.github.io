@@ -34,7 +34,7 @@ alt_lang: /team/
 </div>
 
 {% if site.data.team_members.size > 0 %}
-## 학부 연구생
+## 학생 연구원
 
 <div class="team-grid">
 {% for member in site.data.team_members %}
