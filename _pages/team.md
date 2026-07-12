@@ -11,6 +11,8 @@ alt_lang: /ko/team/
 
 **We are looking for new team members!**
 
+We work broadly on **AI-based medical image processing** — from deep-learning MRI reconstruction to rapid quantitative MRI and motion-robust diffusion imaging. Day to day, we build and train models in **Python** and **PyTorch**. If you are curious about medical imaging, deep learning, or MRI physics, we'd love to hear from you.
+
 ## PI
 
 <div class="section-card">
