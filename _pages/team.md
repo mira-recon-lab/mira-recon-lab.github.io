@@ -67,7 +67,7 @@ We work broadly on **AI-based medical image processing** — from deep-learning 
 <div class="section-card">
 <table class="alumni-table">
 <thead>
-<tr><th>Name</th><th>Duration</th><th>Current Position</th></tr>
+<tr><th>Name</th><th>Duration</th><th>Program</th></tr>
 </thead>
 <tbody>
 {% for member in site.data.alumni %}
