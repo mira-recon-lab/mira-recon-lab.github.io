@@ -32,9 +32,9 @@
 {% for article in site.data.news limit:3 %}
 <div class="news-item">
 <div class="news-date">{{ article.date }}</div>
-<div class="news-headline">{{ article.headline }}</div>
+<div class="news-headline">{% if cur_lang == 'ko' %}{{ article.headline_ko | default: article.headline }}{% else %}{{ article.headline }}{% endif %}</div>
 </div>
 {% endfor %}
 </div>
-<p style="margin-top: var(--space-4);"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">{% if cur_lang == 'ko' %}전체 소식 보기 &rarr;{% else %}See all news &rarr;{% endif %}</a></p>
+<p style="margin-top: var(--space-4);"><a href="{{ site.url }}{{ site.baseurl }}{{ prefix }}/allnews.html">{% if cur_lang == 'ko' %}전체 소식 보기 &rarr;{% else %}See all news &rarr;{% endif %}</a></p>
 </div>

@@ -1,9 +1,20 @@
 # News items shown on the home page sidebar (3 most recent); all appear on /allnews.
+# date and headline required. headline_ko optional (Korean page).
+- date: 2026
+  headline: "Namgyu Han wins Best Trainee Poster Presentation Award (Gold) at ICMRI 2026"
+  headline_ko: "한남규 학생, ICMRI 2026 Best Trainee Poster Presentation Award (Gold) 수상"
 - date: 2026
   headline: "FINDER preprint released on arXiv"
+  headline_ko: "FINDER 프리프린트 arXiv 공개"
 - date: 2026
   headline: "ISMRM 2026 abstract accepted: Multi-Shot EPIK reconstruction at 7 T"
+  headline_ko: "ISMRM 2026 초록 채택: 7 T Multi-Shot EPIK 재구성"
 - date: 2025
   headline: "New paper in Diagnostics on self-supervised accelerated MRI reconstruction"
+  headline_ko: "자기지도학습 기반 가속 MRI 재구성 논문 Diagnostics 게재"
+- date: 2025
+  headline: "Chaeeun Lim wins Best Trainee Poster Presentation Award (Grand Prix) at ICMRI 2025"
+  headline_ko: "임채은 학생, ICMRI 2025 Best Trainee Poster Presentation Award (Grand Prix) 수상"
 - date: 2024
   headline: "MIRA Lab launched at Sejong University"
+  headline_ko: "세종대학교에 MIRA Lab 개설"
