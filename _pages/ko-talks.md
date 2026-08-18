@@ -1,21 +1,21 @@
 ---
-title: "Talks"
+title: "발표"
 layout: gridlay
 sitemap: false
-permalink: /talks/
+permalink: /ko/talks/
 published: false  # upstream template placeholder — hidden until real content exists
-lang: en
-alt_lang: /ko/talks/
+lang: ko
+alt_lang: /talks/
 ---
 
-## Talks
+## 발표
 
 <div class="section-card" id="pubList">
-<h3>Invited Talks</h3>
+<h3>초청 강연</h3>
 
 {% bibliography --query @incollection[keywords ^= invited] %}
 
-<h3>Regular Talks</h3>
+<h3>일반 발표</h3>
 
 {% bibliography --query @incollection[keywords != invited] %}
 </div>

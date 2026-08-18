@@ -1,4 +1,12 @@
 <head>
+  {%- assign cur_lang = page.lang | default: 'en' -%}
+  {%- if cur_lang == 'ko' -%}
+    {%- assign alt_lang_code = 'en' -%}{%- assign og_locale = 'ko_KR' -%}{%- assign og_locale_alt = 'en_US' -%}
+  {%- else -%}
+    {%- assign alt_lang_code = 'ko' -%}{%- assign og_locale = 'en_US' -%}{%- assign og_locale_alt = 'ko_KR' -%}
+  {%- endif -%}
+  {%- assign self_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url -%}
+  {%- assign alt_url = page.alt_lang | prepend: site.baseurl | prepend: site.url -%}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,6 +41,10 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{ og_locale }}">
+  {%- if page.alt_lang %}
+  <meta property="og:locale:alternate" content="{{ og_locale_alt }}">
+  {%- endif %}
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
   {% if site.photo %}<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
   <meta name="twitter:card" content="summary">
@@ -51,7 +63,12 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ self_url }}">
+  {%- if page.alt_lang %}
+  <link rel="alternate" hreflang="{{ cur_lang }}" href="{{ self_url }}">
+  <link rel="alternate" hreflang="{{ alt_lang_code }}" href="{{ alt_url }}">
+  <link rel="alternate" hreflang="x-default" href="{% if cur_lang == 'en' %}{{ self_url }}{% else %}{{ alt_url }}{% endif %}">
+  {%- endif %}
   <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml">

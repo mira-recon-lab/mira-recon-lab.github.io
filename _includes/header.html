@@ -52,9 +52,9 @@
 <div class="search-modal">
 <div class="search-input-wrapper">
 <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
-<input type="text" class="search-input" id="searchInput" placeholder="Search pages..." autocomplete="off">
+<input type="text" class="search-input" id="searchInput" placeholder="{% if cur_lang == 'ko' %}페이지 검색...{% else %}Search pages...{% endif %}" autocomplete="off">
 <kbd class="search-kbd">ESC</kbd>
 </div>
-<div class="search-results" id="searchResults"></div>
+<div class="search-results" id="searchResults"{% if cur_lang == 'ko' %} data-none="검색 결과가 없습니다:" data-error="검색 색인을 불러오지 못했습니다."{% endif %}></div>
 </div>
 </div>

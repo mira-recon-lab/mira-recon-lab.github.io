@@ -12,7 +12,7 @@ alt_lang: /allnews.html
 <div class="section-card" markdown="0">
 <div class="news-timeline">
 {% for article in site.data.news %}
-<div class="news-item">
+<div class="news-item" id="news-{{ article.date }}-{{ article.headline | slugify }}">
 <span class="news-date">{{ article.date }}</span>
 <span class="news-headline">{{ article.headline_ko | default: article.headline }}</span>
 </div>

@@ -226,7 +226,11 @@
         callback(data);
       })
       .catch(function () {
-        searchResultsEl.innerHTML = '<div class="search-no-results">Could not load search index.</div>';
+        var errEl = document.createElement('div');
+        errEl.className = 'search-no-results';
+        errEl.textContent = searchResultsEl.getAttribute('data-error') || 'Could not load search index.';
+        searchResultsEl.innerHTML = '';
+        searchResultsEl.appendChild(errEl);
       });
   }
 
@@ -236,13 +240,22 @@
       return;
     }
     var q = query.toLowerCase();
+    // Show results in the language being browsed. Pages with no counterpart in
+    // the other language (item.paired === false) stay visible either way, so a
+    // Korean visitor can still find English-only pages.
+    var curLang = document.documentElement.lang || 'en';
     var matches = data.filter(function (item) {
-      return item.title.toLowerCase().includes(q) ||
-             item.content.toLowerCase().includes(q);
+      var langOk = item.lang === undefined || item.lang === curLang || item.paired === false;
+      return langOk && (item.title.toLowerCase().includes(q) ||
+                        item.content.toLowerCase().includes(q));
     });
 
     if (matches.length === 0) {
-      searchResultsEl.innerHTML = '<div class="search-no-results">No results for "' + query + '"</div>';
+      var noneEl = document.createElement('div');
+      noneEl.className = 'search-no-results';
+      noneEl.textContent = (searchResultsEl.getAttribute('data-none') || 'No results for') + ' "' + query + '"';
+      searchResultsEl.innerHTML = '';
+      searchResultsEl.appendChild(noneEl);
       return;
     }
 

@@ -3,6 +3,7 @@ layout: post
 title: "Space-Time"
 date: 1961-11-28
 categories: "Lecture Notes"
+published: false  # upstream template demo post — hidden with the blog
 ---
 
 ## Lorentz transformation

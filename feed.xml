@@ -28,7 +28,7 @@ layout: null
     <item>
       <title>{{ article.headline | xml_escape }}</title>
       <description>{{ article.headline | xml_escape }}</description>
-      <link>{{ site.url }}{{ site.baseurl }}/allnews.html</link>
+      <link>{{ site.url }}{{ site.baseurl }}/allnews.html#news-{{ article.date }}-{{ article.headline | slugify }}</link>
       <guid isPermaLink="false">news-{{ article.date }}-{{ article.headline | slugify }}</guid>
     </item>
     {% endfor %}
