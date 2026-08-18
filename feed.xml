@@ -18,12 +18,18 @@ layout: null
       <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
     </item>
     {% endfor %}
+    {%- comment -%}
+    news.yml carries only a year, so date_to_rfc822 would read it as a Unix
+    timestamp and stamp every item 1970. pubDate is omitted rather than
+    fabricated -- readers date these from first fetch. The guid is what keeps
+    the items distinct, since they all share one link.
+    {%- endcomment -%}
     {% for article in site.data.news limit:20 %}
     <item>
       <title>{{ article.headline | xml_escape }}</title>
       <description>{{ article.headline | xml_escape }}</description>
-      <pubDate>{{ article.date | date_to_rfc822 }}</pubDate>
       <link>{{ site.url }}{{ site.baseurl }}/allnews.html</link>
+      <guid isPermaLink="false">news-{{ article.date }}-{{ article.headline | slugify }}</guid>
     </item>
     {% endfor %}
   </channel>
